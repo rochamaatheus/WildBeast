@@ -74,6 +74,24 @@ img {
 
 .sidenav {
   grid-area: sidenav;
+  background-color: #fafbfc;
+  padding: 1.875rem;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 3.75rem;
+  max-width: 6.25rem;
+  margin: 0 auto 1.875rem auto;
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.2s ease-out;
+}
+
+.sidenav li a:hover {
+  background-color: #b07dfb;
 }
 
 .content {
