@@ -24,6 +24,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px;
 }
 /* GRID GERAL */
 
@@ -100,8 +101,20 @@ img {
 
 .anuncios {
   grid-area: anuncios;
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 1.875rem;
+  gap: 1.875rem;
 }
 
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #84e, #b07dfb);
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  padding: 1.875rem;
 }
