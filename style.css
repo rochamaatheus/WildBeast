@@ -97,6 +97,16 @@ img {
 
 .content {
   grid-area: content;
+  display: grid;
+  max-width: 56.25rem;
+  margin: 0 auto;
+  padding: 1.875rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+
+.col-2 {
+  grid-column: 1/-1;
 }
 
 .anuncios {
