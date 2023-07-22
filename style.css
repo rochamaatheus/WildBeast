@@ -18,6 +18,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 img {
@@ -179,6 +180,44 @@ p {
   padding: 5px 0;
   position: relative;
   top: 2px;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: #b07dfb;
+  max-width: 16rem;
+}
+
+.citacao,
+.atributos {
+  align-self: start;
+  padding: 1.875rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #84e, #b07dfb);
+}
+
+.citacao > * {
+  color: #fff;
+}
+
+.citacao p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 31.25rem;
+  margin: 0 auto 0.5rem auto;
+}
+
+.atributos li {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125rem;
+  padding: 0.9375rem;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
 }
 
 .anuncios {
