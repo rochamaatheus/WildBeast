@@ -27,6 +27,7 @@ img {
   display: block;
   border-radius: 5px;
 }
+
 /* GRID GERAL */
 
 .estrutura {
@@ -37,6 +38,8 @@ img {
     'sidenav content anuncios'
     'footer footer footer';
 }
+
+/* HEADER */
 
 .header {
   grid-area: header;
@@ -74,6 +77,8 @@ img {
   margin-left: 1.875rem;
 }
 
+/* SIDENAV */
+
 .sidenav {
   grid-area: sidenav;
   background-color: #fafbfc;
@@ -95,6 +100,8 @@ img {
 .sidenav li a:hover {
   background-color: #b07dfb;
 }
+
+/* CONTENT */
 
 .content {
   grid-area: content;
@@ -130,6 +137,8 @@ p {
   margin-top: 1.875rem;
 }
 
+/* TITULO */
+
 .titulo {
   color: #b07dfb;
 }
@@ -144,6 +153,8 @@ p {
   font-size: 0.875rem;
   font-style: italic;
 }
+
+/* CARACTERISTICAS */
 
 .caracteristicas {
   display: flex;
@@ -168,6 +179,8 @@ p {
   color: #b07dfb;
 }
 
+/* INFO PRINCIPAL */
+
 .numero {
   font-size: 3rem;
   line-height: 1;
@@ -187,6 +200,8 @@ p {
   color: #b07dfb;
   max-width: 16rem;
 }
+
+/* CITACAO & ATRIBUTOS */
 
 .citacao,
 .atributos {
@@ -220,6 +235,8 @@ p {
   border-top: 2px solid #b07dfb;
 }
 
+/* ANUNCIOS */
+
 .anuncios {
   grid-area: anuncios;
   background-color: #fafbfc;
@@ -228,6 +245,8 @@ p {
   padding: 1.875rem;
   gap: 1.875rem;
 }
+
+/* FOOTER */
 
 .footer {
   grid-area: footer;
