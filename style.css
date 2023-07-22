@@ -39,6 +39,28 @@ img {
     'footer footer footer';
 }
 
+@media (max-width: 75rem) {
+  .estrutura {
+    grid-template-areas:
+      'header header header'
+      'sidenav content content'
+      'sidenav anuncios anuncios'
+      'footer footer footer';
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'sidenav'
+      'content'
+      'anuncios'
+      'footer';
+  }
+}
+
 /* HEADER */
 
 .header {
@@ -77,6 +99,21 @@ img {
   margin-left: 1.875rem;
 }
 
+@media (max-width: 47.5rem) {
+  .header {
+    grid-template-columns: auto;
+  }
+  .logo {
+    margin-bottom: 1.25rem;
+  }
+  .header nav a {
+    font-size: 1rem;
+  }
+  .header li + li {
+    margin-left: 0.625rem;
+  }
+}
+
 /* SIDENAV */
 
 .sidenav {
@@ -101,6 +138,45 @@ img {
   background-color: #b07dfb;
 }
 
+@keyframes seta {
+  from {
+    right: 1.875rem;
+  }
+  to {
+    right: 1.25rem;
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .sidenav {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .sidenav::after {
+    content: '\2192';
+    font-size: 1.875rem;
+    position: absolute;
+    top: -0.2rem;
+    right: 1.875rem;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+  .sidenav ul {
+    display: flex;
+  }
+  .sidenav ul li {
+    flex: 1 0 3.75rem;
+  }
+  .sidenav {
+    padding: 0 1.875rem;
+  }
+  .sidenav li a {
+    margin: 1.875rem 1.875rem 1.875rem 0;
+  }
+}
+
 /* CONTENT */
 
 .content {
@@ -111,6 +187,15 @@ img {
   padding: 1.875rem;
   grid-template-columns: 1fr 1fr;
   gap: 1.875rem;
+}
+
+@media (max-width: 37.5rem) {
+  .content {
+    grid-template-columns: auto;
+  }
+  .content img {
+    margin: 0 auto;
+  }
 }
 
 .col-2 {
@@ -201,6 +286,16 @@ p {
   max-width: 16rem;
 }
 
+@media (max-width: 37.5rem) {
+  .destaque {
+    max-width: max-content;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: -0.005rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
 /* CITACAO & ATRIBUTOS */
 
 .citacao,
@@ -244,6 +339,7 @@ p {
   align-content: start;
   padding: 1.875rem;
   gap: 1.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 /* FOOTER */
